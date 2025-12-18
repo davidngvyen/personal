@@ -1,0 +1,43 @@
+export type TaskStatus = 'pending' | 'active' | 'completed';
+
+export interface Task {
+  id?: number;
+  title: string;
+  description?: string;
+  due_date_time: string;
+  duration_minutes: number;
+  priority: number;
+  category?: string;
+  status: TaskStatus;
+  recurrence_rule?: string | null;
+  created_at?: string;
+  updated_at?: string;
+}
+
+export interface Proof {
+  id?: number;
+  task_id: number;
+  image_path: string;
+  created_at?: string;
+  notes?: string;
+}
+
+export interface Settings {
+  id?: number;
+  notification_interval: number;
+  quiet_hours_start: string;
+  quiet_hours_end: string;
+  startup_enabled: boolean;
+  strictness_level: number;
+}
+
+export interface ReminderPayload {
+  task: Task;
+  overdueMinutes: number;
+}
+
+export interface Suggestion {
+  title: string;
+  details: string;
+  severity: 'info' | 'warning';
+}
