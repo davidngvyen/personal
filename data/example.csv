@@ -1,0 +1,4 @@
+title,description,start_datetime,due_datetime,duration_minutes,priority,category,recurrence
+Morning Review,Plan day,2024-09-01T09:00,2024-09-01T09:00,30,3,planning,
+Deep Work,Work on feature,2024-09-01T10:00,2024-09-01T10:00,120,5,focus,
+Exercise,,2024-09-01,2024-09-01,45,4,health,weekly

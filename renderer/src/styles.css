@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f6;
+}
+
+.app header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #111827;
+  color: white;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.panel {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.panel label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.panel input,
+.panel textarea {
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reminder {
+  padding: 1rem;
+  background: #fff7ed;
+  height: 100vh;
+}
+
+.reminder .buttons button {
+  margin-right: 0.5rem;
+}
+
+.info {
+  color: #0ea5e9;
+}
+
+.warning {
+  color: #f97316;
+}
